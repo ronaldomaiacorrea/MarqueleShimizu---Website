@@ -9,8 +9,10 @@
     <meta name="Keywords" content="beleza, coloracao pessoal, cabelos corte">
     <meta name="author" content="Ronaldo Maia Correa">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Marquele WebSite | Bem-vindo</title>
 </head>
 
@@ -38,22 +40,25 @@
             <div class="div-show-case">
                 <p id="welcome">SUAS CORES<br />
                     SUA MARCA PESSOAL</p>
-
             </div>
         </div>
     </section>
     <section class="about">
-        <div class="container">
-            <div class="div-about">
-                <div class="image">
-
-                </div>
-                <div class="text">
-                    <p>Falar sobre ela</p>
-                </div>
+        <div class="div-ab">
+            <h1 id="about">SOBRE MIM</h1>
+            <div class="div-ab-img">
+                <img src="./images/aboutPicture.jpg" alt="About Marquele" id="aboutimage">
             </div>
-            <h1>Novidades - Alguns destaques que vc considera importante mostrar aqui</h1>
+            <div class="div-ab-txt">
+                <p>Coach de beleza, colorimetrista, analista de coloração pessoal, visagista, maquiadora e designer
+                    de sobrancelhas.</p>
+                <p>Sou brasiliense, formada em quimica pela UEG, mãe e esposa. Apaixonada pela busca de conhecimento
+                    e fascinada pela arte de ensinar. Ajudo mulheres a se conhecerem profundamente e a encontrarem sua
+                    imagem atraves da harmonia das cores, das formas e das linhas.</p>
+
+            </div>
         </div>
+
     </section>
     <section class="testimonials">
         <div class="container">
@@ -63,7 +68,16 @@
     <footer>
         <p>RMC Web Design, Copyright &copy; 2019</p>
     </footer>
-
+    <!-- Script to change opacity when scrolling the web page -->
+    <script>
+        var header = $('header');
+        $(window).scroll(function () {
+            header.addClass('higher-opacity');
+            if ($(this).scrollTop() === 0) {
+                header.removeClass('higher-opacity');
+            }
+        });
+    </script>
 
 </body>
 
