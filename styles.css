@@ -48,13 +48,20 @@ footer {
 	
 }
 
+ul#anim-list { 
+	
+	list-style-type: none;
+	display: inline;	
+}
+
 #welcome1 {
 	position: absolute;
-	top: 80%;
-	right: 70%;
+	top: 50%;
+	left:40%;
+	text-align: center;	
+	padding: 10px;
 	font-size: 40px;
 	color:#FFF;
-	padding: 15px;
 	font-family: 'Hepta Slab', serif;
 	text-shadow: 1px 1px 8px #fff; 
 	
@@ -62,8 +69,9 @@ footer {
 
 #welcome2 {
 	position: absolute;
-	top: 80%;
-	right: 40%;
+	top: 55%;
+	left: 35%;
+	text-align: center;	
 	font-size: 40px;
 	color:#FFF;
 	padding: 15px;
@@ -74,12 +82,13 @@ footer {
 
 #welcome3 {
 	position: absolute;
-	top: 80%;
-	right: 150%;
-	font-size: 40px;
-	color:#FFF;
+	top: 62%;
+	left:32%;
+	text-align: center;	
+	font-size: 60px;
+	color:#FFEB00;;
 	padding: 15px;
-	font-family: 'Hepta Slab', serif;
+	font-family: 'Satisfy', cursive;
 	text-shadow: 1px 1px 8px #fff; 
 	
 }
@@ -145,19 +154,16 @@ nav a:hover {
 	text-align: center;
 	font-size: 25px;
 	height:auto;
-	animation: fadeIn ease 5s;
-  -webkit-animation: fadeIn ease 5s;
-  -moz-animation: fadeIn ease 5s;
-  -o-animation: fadeIn ease 5s;
-  -ms-animation: fadeIn ease 5s;
+	
 }
 
 #aboutimage {
 
-	max-height: 500px;
+	
+	height: auto;
 	width: 100%;
 	z-index: 1;	
-	filter: sepia(1);	
+		
 }
 
 .div-ab-img {
@@ -173,7 +179,7 @@ nav a:hover {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	background-color: #0f0976;
-	height: 800px;
+	height: 880px;
 	width: 100%;
 	box-shadow: 0 8px 6px -6px black;
 
@@ -183,7 +189,7 @@ nav a:hover {
 
 	padding: 20px;	
 	text-align: center;
-	font-family: 'Cinzel', serif;
+	font-family: 'Satisfy', cursive;
 	font-size: 50px;
 	color: #FFEB00;
 	font-weight: 700;
@@ -192,7 +198,8 @@ nav a:hover {
 
 .div-ab-txt {
 	padding: 10px;	
-	margin-right: 80px;
+	margin-top: 30px;
+	margin-right: 200px;
 	float: right;
 	font-size: 30px;
 	color: #FFEB00;
@@ -224,29 +231,29 @@ nav a:hover {
 
 /* Animation */
 
-.fade-in {
-	
-  
+#anim-list li {
+
+	opacity: 0;
+	animation: fadeIn 1s ease-in both;
+	-moz-animation: fadeIn 1s ease-in both;
+	-webkit-animation: fadeIn 1s ease-in both;
+
 }
 
-.fade-in-1 {
-	
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
-	
+#anim-list li:nth-child(2){
+	animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-ms-animation-delay: 2s;
 }
 
-.fade-in-2 {
-	
-  animation: fadeIn ease 15s;
-  -webkit-animation: fadeIn ease 15s;
-  -moz-animation: fadeIn ease 15s;
-  -o-animation: fadeIn ease 15s;
-  -ms-animation: fadeIn ease 15s;
-	
+#anim-list li:nth-child(3){
+	animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	-o-animation-delay: 3s;
+	-webkit-animation-delay:3s;
+	-ms-animation-delay: 3s;
 }
 
 @keyframes fadeIn{
