@@ -1,51 +1,114 @@
 
-/* Global */
+/* -----------------------------------------------
+Global Configurations 
+--------------------------------------------------*/
 
 body {
 	
 	font-family: 'Darker Grotesque', sans-serif;
-	font-size: 15px;
+	font-size: 16px;
+	font-weight: 100;
 	line-height: 1.5;
+
 	padding: 0;
 	margin: 0;
-	background-color: #f4f4f4	
+	background-color: #f4f4f4;	
+	
+}
+
+.container {
+	
+	width:80%;
+	margin: auto;
+	overflow: hidden;
+	align-content: center;
 }
 
 header {
 
 	background-color: #FFF;
-	height: 120px;
 	box-shadow: 0 6px 6px -6px #c93694; 
 	position: fixed;
 	transition: top 0.2s ease-in-out;
 	width: 100%;
-	opacity: 0.5;
-	transition: all 0.6s;
+	opacity: 0.6;	
 	z-index: 2;
+	transition: all 1s;
+}
+
+footer {
+
+	color: #FFFFFF;
+	background-color: #423E48;
+	text-align: center;
+	width: 100%; 
+
 }
 
 .higher-opacity {
+
 	opacity: 1;
+}
+
+
+/* ----------------------------------------
+Navigation Bar
+-----------------------------------------*/
+
+nav a {
+	
+	text-align: center;	
+	font-weight: 100;
+	color: #000;
+	display: inline;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+	transition: 0.4s;
+}
+
+nav a:hover {
+
+	background-color: #c93694;
+	color: #FFEB00;
+		
+}
+
+/*----------------------------------
+Show-case Section
+-----------------------------------*/
+
+.div-show-case {
+	
+	opacity: 1;
+	transition: opacity 2s linear;
+  	text-align: center;
+  
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------
+ Default styles for "standard" desktop or landscape tablet layout, about 1024px wide 
+ -----------------------------------------------------------------------------------------------*/
+
+nav a {
+
+	padding: 30px 10px;
+	font-size: 16px;
+}
+
+header {
+
+	height: 120px;
+
 }
 
 footer {
 	
 	padding: 20px;
-	margin-top: 20px;
-	color: #FFFFFF;
-	background-color: #423E48;
-	text-align: center;
-	font-size: 18px;
-	width: 100%; 
+	margin-top: 20px;	
+	font-size: 18px;	
 	height: 200px;
-}
-
-.div-show-case {
-	
-  	opacity: 1;
-  	transition: opacity 2s linear;
-	text-align: center;
-	
 }
 
 ul#anim-list { 
@@ -55,14 +118,15 @@ ul#anim-list {
 }
 
 #welcome1 {
+
 	position: absolute;
 	top: 50%;
 	left:40%;
 	text-align: center;	
 	padding: 10px;
-	font-size: 40px;
+	font-size: 50px;
 	color:#FFF;
-	font-family: 'Hepta Slab', serif;
+	font-family: 'Satisfy', cursive;
 	text-shadow: 1px 1px 8px #fff; 
 	
 }
@@ -72,15 +136,16 @@ ul#anim-list {
 	top: 55%;
 	left: 35%;
 	text-align: center;	
-	font-size: 40px;
+	font-size: 50px;
 	color:#FFF;
 	padding: 15px;
-	font-family: 'Hepta Slab', serif;
+	font-family: 'Satisfy', cursive;
 	text-shadow: 1px 1px 8px #fff; 
 	
 }
 
 #welcome3 {
+
 	position: absolute;
 	top: 62%;
 	left:32%;
@@ -93,15 +158,6 @@ ul#anim-list {
 	
 }
 
-.container {
-	
-	width:80%;
-	margin: auto;
-	overflow: hidden;
-	align-content: center;
-}
-
-/* Navigation */
 
 .main-nav {
 
@@ -110,41 +166,23 @@ ul#anim-list {
 	
 }
 
-#logo {
-	
+#div-logo {
+
 	float:left;
 	margin-top: 0;
 }
 
-nav a {
-
-	padding-top: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 30px;
-	text-align: center;
-	font-size: 24px;
-	font-weight: bold;
-	color: #000;
-	display: inline;
-	text-decoration: none;
-	border-bottom: 3px solid transparent;
-	transition: 0.4s;
-}
-
-
-
-nav a:hover {
-
-	background-color: #c93694;
-		
+#logo {
+	
+		width: 200px;
+	
 }
 
 .show-case {
 
 	position: relative;
 	z-index: -1;	
-	min-height: 1000px;
+	min-height: 850px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/file-3.jpeg') ;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -152,84 +190,62 @@ nav a:hover {
 	background-position-y: 35%;
 	box-shadow: 0 8px 6px -6px black;
 	text-align: center;
-	font-size: 25px;
-	height:auto;
-	
-}
-
-#aboutimage {
-
-	
-	height: auto;
-	width: 100%;
-	z-index: 1;	
-		
-}
-
-.div-ab-img {
-	
-	padding-right: 10px;
-	margin-left: 200px;
-	float: left;
-
+	height:auto;	
 }
 
 .div-ab {
 
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	background-color: #0f0976;
-	height: 880px;
+	height: 760px;
 	width: 100%;
 	box-shadow: 0 8px 6px -6px black;
 
 }
 
-.div-ab h1 {
-
-	padding: 20px;	
-	text-align: center;
-	font-family: 'Satisfy', cursive;
-	font-size: 50px;
-	color: #FFEB00;
-	font-weight: 700;
+#aboutimage {
 	
+	height: auto;
+	width: 100%;
+	z-index: 1;	
+	margin-top: 70px;
+		
+}
+
+.div-ab-img {
+	
+	margin-left: 70px;
+	float: left;
+
 }
 
 .div-ab-txt {
+
 	padding: 10px;	
-	margin-top: 30px;
-	margin-right: 200px;
+	margin-top: 90px;
 	float: right;
-	font-size: 30px;
+	font-size: 28px;
 	color: #FFEB00;
 	width: 40%;
 }
 
+span#name {
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 2.5vw;
+}
+
 .div-ab-txt p {
+	font-weight: 100;
 	margin-top: 0;
 	margin-right: 50px;
-	text-align: justify;
+	text-align: left;
 }
 
-@media screen and (max-width: 500px) {
-	#logo {
-		
-	  float: none;
-	  display: block;
-	  text-align: left;
-		
-	}
-	
-	nav a {
-	  	float: none;
-	  	display: block;
-		width: 100%;
-		text-align: left;
-	}
-}
-
-/* Animation */
+/*------------------------------
+ Animation 
+ -------------------------------*/
 
 #anim-list li {
 
@@ -300,3 +316,124 @@ nav a:hover {
     opacity:1;
   }
 }
+
+
+
+@media all and (max-width: 480px) {
+  /* Styles for "average" mobile phone landscape; e.g., an iPhone  */
+}
+
+@media all and (max-width: 320px) {
+  /* Styles for iPhone portrait and other really narrow layouts  */
+}
+
+@media all and (max-width: 990px) {
+
+.main-nav {
+	display: none;
+}
+}
+
+@media all and (min-width: 1000px) {
+
+.div-ab-img {
+
+		padding-right: 10px;
+		margin-left: 50px;
+		float: left;	
+	
+	}
+	.div-ab-txt {
+
+		margin-right: 50px;
+		padding: 10px;
+		width: 40%;
+		font-size: 20px;
+	
+	}
+
+	nav a {
+		
+		padding: 20px 10px;
+		font-size: 1.5vw;
+	}	
+  
+}
+
+@media all and (min-width: 1300px) {
+
+	.div-ab-img {
+	
+		padding-right: 10px;
+		margin-left: 180px;
+		float: left;
+	
+	}
+
+	.div-ab-txt {
+
+		margin-right: 130px;
+		padding: 10px;
+		width: 40%;
+		font-size: 25px;
+		
+	
+	}
+
+	nav a {
+
+		padding: 30px 15px;
+		font-size: 1.5vw;
+	}
+  
+} 
+
+@media all and (min-width: 1600px) {
+
+	nav a {
+		
+		padding: 30px 15px;
+		font-size: 1vw;
+	}
+	
+	.div-ab-img {
+	
+		padding-right: 10px;
+		margin-left: 250px;
+		float: left;
+	
+	}
+
+	.div-ab-txt {
+
+		
+		margin-right: 150px;
+	
+	}
+  
+} 
+
+@media all and (min-width: 1800px) {
+
+	nav a {
+		
+		padding: 30px 15px;
+		font-size: 1vw;
+	}
+	
+	.div-ab-img {
+	
+		padding-right: 10px;
+		margin-left: 280px;
+		float: left;
+	
+	}
+
+	.div-ab-txt {
+
+		
+		margin-right: 200px;
+	
+	}
+  
+} 
